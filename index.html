@@ -588,8 +588,36 @@
                                 <div class="clearfix"></div>
                                 <div class="col-lg-12 text-center">
                                     <div id="success"></div>
-                                    <button id="sendMessageButton" class="sim-btn btn-new from-middle animated" data-text="Send Message" type="submit">Send Message</button>
+                                    <button id="sendMessageButton" class=" sim-btn btn-new from-middle animated " data-text="Send Message " type="submit ">Send Message</button>
                                 </div>
+
+
+                                <script type="text/javascript">
+                                    function sendEmail() {
+
+                                        Email.send({
+                                                Host: "smtp.live.com",
+                                                Username: "sjjfrisch@outlook.com",
+                                                Password: "Enter your password",
+                                                To: 'jjfrisch@outlook.com',
+                                                From: "jjfrisch@outlook.com",
+                                                Subject: "Sending Email using javascript",
+                                                Body: "Well that was easy!!",
+                                            })
+                                            .then(function(message) {
+                                                alert("mail sent successfully")
+                                            });
+                                    }
+                                </script>
+                                </head>
+
+                                <form method="post">
+                                    <input type="button" value="Send Email" onclick="sendEmail()" />
+                                </form>
+
+
+
+
                             </div>
                         </form>
                     </div>
@@ -602,12 +630,12 @@
     </div>
     <!-- end section -->
 
-    <div class="copyrights">
-        <div class="container">
-            <div class="footer-distributed">
-                <div class="footer-left">
-                    <p class="footer-company-name">All Rights Reserved. &copy; 2022 <a href="#">Jake Frischmann</a> Boilerplate Design By :
-                        <a href="https://html.design/">html design</a></p>
+    <div class="copyrights ">
+        <div class="container ">
+            <div class="footer-distributed ">
+                <div class="footer-left ">
+                    <p class="footer-company-name ">All Rights Reserved. &copy; 2022 <a href="# ">Jake Frischmann</a> Boilerplate Design By :
+                        <a href="https://html.design/ ">html design</a></p>
                 </div>
             </div>
         </div>
@@ -615,21 +643,21 @@
     </div>
     <!-- end copyrights -->
 
-    <a href="#" id="scroll-to-top" class="dmtop global-radius"><i class="fa fa-angle-up"></i></a>
+    <a href="# " id="scroll-to-top " class="dmtop global-radius "><i class="fa fa-angle-up "></i></a>
 
     <!-- ALL JS FILES -->
-    <script src="js/all.js"></script>
+    <script src="js/all.js "></script>
     <!-- Camera Slider -->
-    <script src="js/jquery.mobile.customized.min.js"></script>
-    <script src="js/jquery.easing.1.3.js"></script>
-    <script src="js/parallaxie.js"></script>
-    <script src="js/slick.min.js"></script>
-    <script src="js/animated-slider.js"></script>
+    <script src="js/jquery.mobile.customized.min.js "></script>
+    <script src="js/jquery.easing.1.3.js "></script>
+    <script src="js/parallaxie.js "></script>
+    <script src="js/slick.min.js "></script>
+    <script src="js/animated-slider.js "></script>
     <!-- Contact form JavaScript -->
-    <script src="js/jqBootstrapValidation.js"></script>
-    <script src="js/contact_me.js"></script>
+    <script src="js/jqBootstrapValidation.js "></script>
+    <script src="js/contact_me.js "></script>
     <!-- ALL PLUGINS -->
-    <script src="js/custom.js"></script>
+    <script src="js/custom.js "></script>
 </body>
 
 </html>

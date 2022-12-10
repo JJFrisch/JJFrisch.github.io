@@ -1,3 +1,11 @@
+function sendMail() {
+    var link = "mailto:jjfrisch@outlook.com" +
+        "?cc=myCCaddress@example.com" +
+        "&subject=" + encodeURIComponent("This is my subject") +
+        "&body=" + encodeURIComponent(document.getElementById('myText').value);
+
+    window.location.href = link;
+}
 $(function() {
 
     $("#contactForm input,#contactForm textarea").jqBootstrapValidation({
@@ -14,12 +22,6 @@ $(function() {
             var message = $("textarea#message").val();
             var firstName = name; // For Success/Failure Message
 
-            var link = "mailto:JJFrisch@outlook.com" +
-                email +
-                "&subject=" + encodeURIComponent("This is my subject") +
-                "&body=" + encodeURIComponent(document.getElementById('myText').value);
-
-            window.location.href = link;
             // Check for white space in name for Success/Fail message
             if (firstName.indexOf(' ') >= 0) {
                 firstName = name.split(' ').slice(0, -1).join(' ');
@@ -39,6 +41,7 @@ $(function() {
 
                 success: function() {
                     // Success message
+                    sendMail()
                     $('#success').html("<div class='alert alert-success'>");
                     $('#success > .alert-success').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
                         .append("</button>");
