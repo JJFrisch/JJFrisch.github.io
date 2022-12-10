@@ -1,10 +1,16 @@
-function sendMail() {
-    var link = "mailto:jjfrisch@outlook.com" +
-        "?cc=myCCaddress@example.com" +
-        "&subject=" + encodeURIComponent("This is my subject") +
-        "&body=" + encodeURIComponent(document.getElementById('myText').value);
-
-    window.location.href = link;
+function sendEmail() {
+    Email.send({
+            Host: "smtp.live.com",
+            Username: "jjfrisch@outlook.com",
+            Password: "Enter your password",
+            To: 'jjfrisch@outlook.com',
+            From: "jjfrisch@outlook.com",
+            Subject: "Sending Email using javascript",
+            Body: "Well that was easy!!",
+        })
+        .then(function(message) {
+            alert("mail sent successfully")
+        });
 }
 $(function() {
 
