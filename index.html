@@ -78,7 +78,7 @@
                         <a class="nav-link js-scroll-trigger" href="#testimonials">Testimonials</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="#blog">Blog</a>
+                        <a class="nav-link js-scroll-trigger" href="#experiences">Experiences</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link js-scroll-trigger" href="#contact">Contact Me</a>
@@ -208,12 +208,6 @@
                             <a style="color:#237dc3ec" target="_blank" href="https://github.com/JJFrisch/Maze-Theories">Maze Theories</a>, and
                             <a style="color:#237dc3ec" target="_blank" href="https://github.com/JJFrisch/Image-Recognition">ML Image Recognition.</a>
                         </p>
-                        <!-- <p>
-                            <p>Over the past 4 years I've used python in my personal and research projects. Some projects include,</p>
-                            <p style="color:#237dc3ec" target="_blank" href="https://github.com/JJFrisch/Fake-News-Risk-Identification">Fake News</p>
-                             <p>, </p>
-                        <p style="color:#237dc3ec" target="_blank" href="https://github.com/JJFrisch/Maze-Theories">Maze Theories</p>
-                        </p> -->
                     </div>
                 </div>
                 <!-- end col -->
@@ -287,8 +281,12 @@
     </div>
     <!-- end section -->
 
+    <!-- <div>
+        <div style="width:100%;height:0.5em;background-color:#faad3b"></div>
+    </div> -->
+
     <div id="portfolio" class="section lb">
-        <div class="container">
+        <div class="container" id="portfolio-holder" style="max-height: 80em;overflow:hidden;transition: height 0.4s linear;">
             <div class="section-title text-center">
                 <h3>Portfolio</h3>
                 <p>A collection of my personal, student, and research projects.</p>
@@ -436,98 +434,102 @@
 
             </div>
         </div>
-    </div>
+        <!-- <button src="images/arrow.png" onclick="openPortfolio()" class=" btn-new from-middle animated " style="padding-top:1%;width:100%;background-color: transparent;background-repeat: no-repeat;outline:none;border: none;">
+        <img id="portfolio-open-image" src="images/arrow.png " alt=" ">
+            <h4 style="color:#033e48bd">Expand Portfolio</h4>
+        </button> -->
+
     </div>
 
     <div id="testimonials" class="section wb">
-        <div class="container">
-            <div class="section-title text-center">
+        <div class="container ">
+            <div class="section-title text-center ">
                 <h3>Testimonials</h3>
                 <p>Some thoughts form people I've worked with</p>
             </div>
             <!-- end title -->
 
-            <div class="row">
-                <div class="col-md-12 col-sm-12">
-                    <div class="testi-carousel owl-carousel owl-theme">
-                        <div class="testimonial clearfix">
-                            <div class="desc">
+            <div class="row ">
+                <div class="col-md-12 col-sm-12 ">
+                    <div class="testi-carousel owl-carousel owl-theme ">
+                        <div class="testimonial clearfix ">
+                            <div class="desc ">
                                 <h3>Comp. Sci AP Teacher</h3>
-                                <p class="lead">Yadda -- ill have to check the letter</p>
-                                <i class="fa fa-quote-right"></i>
+                                <p class="lead ">Yadda -- ill have to check the letter</p>
+                                <i class="fa fa-quote-right "></i>
                             </div>
 
-                            <div class="testi-meta">
-                                <img src="uploads/testi_01.png" alt="" class="img-fluid">
+                            <div class="testi-meta ">
+                                <img src="uploads/testi_01.png " alt=" " class="img-fluid ">
                                 <h4>Mr. Dewees</h4>
                             </div>
                             <!-- end testi-meta -->
                         </div>
                         <!-- end testimonial -->
 
-                        <div class="testimonial clearfix">
-                            <div class="desc">
+                        <div class="testimonial clearfix ">
+                            <div class="desc ">
                                 <h3> Awesome Services!</h3>
-                                <p class="lead">Explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you completed.</p>
-                                <i class="fa fa-quote-right"></i>
+                                <p class="lead ">Explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you completed.</p>
+                                <i class="fa fa-quote-right "></i>
                             </div>
-                            <div class="testi-meta">
-                                <img src="uploads/testi_02.png" alt="" class="img-fluid">
+                            <div class="testi-meta ">
+                                <img src="uploads/testi_02.png " alt=" " class="img-fluid ">
                                 <h4>Jacques Philips </h4>
                             </div>
                             <!-- end testi-meta -->
                         </div>
                         <!-- end testimonial -->
 
-                        <div class="testimonial clearfix">
-                            <div class="desc">
+                        <div class="testimonial clearfix ">
+                            <div class="desc ">
                                 <h3> Great & Talented Team!</h3>
-                                <p class="lead">The master-builder of human happines no one rejects, dislikes avoids pleasure itself, because it is very pursue pleasure. </p>
-                                <i class="fa fa-quote-right"></i>
+                                <p class="lead ">The master-builder of human happines no one rejects, dislikes avoids pleasure itself, because it is very pursue pleasure. </p>
+                                <i class="fa fa-quote-right "></i>
                             </div>
-                            <div class="testi-meta">
-                                <img src="uploads/testi_03.png" alt="" class="img-fluid">
+                            <div class="testi-meta ">
+                                <img src="uploads/testi_03.png " alt=" " class="img-fluid ">
                                 <h4>Venanda Mercy </h4>
                             </div>
                             <!-- end testi-meta -->
                         </div>
                         <!-- end testimonial -->
-                        <div class="testimonial clearfix">
-                            <div class="desc">
+                        <div class="testimonial clearfix ">
+                            <div class="desc ">
                                 <h3> Wonderful Support!</h3>
-                                <p class="lead">They have got my project on time with the competition with a sed highly skilled, and experienced & professional team.</p>
-                                <i class="fa fa-quote-right"></i>
+                                <p class="lead ">They have got my project on time with the competition with a sed highly skilled, and experienced & professional team.</p>
+                                <i class="fa fa-quote-right "></i>
                             </div>
-                            <div class="testi-meta">
-                                <img src="uploads/testi_01.png" alt="" class="img-fluid">
+                            <div class="testi-meta ">
+                                <img src="uploads/testi_01.png " alt=" " class="img-fluid ">
                                 <h4>James Fernando </h4>
                             </div>
                             <!-- end testi-meta -->
                         </div>
                         <!-- end testimonial -->
 
-                        <div class="testimonial clearfix">
-                            <div class="desc">
+                        <div class="testimonial clearfix ">
+                            <div class="desc ">
                                 <h3> Awesome Services!</h3>
-                                <p class="lead">Explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you completed.</p>
-                                <i class="fa fa-quote-right"></i>
+                                <p class="lead ">Explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you completed.</p>
+                                <i class="fa fa-quote-right "></i>
                             </div>
-                            <div class="testi-meta">
-                                <img src="uploads/testi_02.png" alt="" class="img-fluid">
+                            <div class="testi-meta ">
+                                <img src="uploads/testi_02.png " alt=" " class="img-fluid ">
                                 <h4>Jacques Philips </h4>
                             </div>
                             <!-- end testi-meta -->
                         </div>
                         <!-- end testimonial -->
 
-                        <div class="testimonial clearfix">
-                            <div class="desc">
+                        <div class="testimonial clearfix ">
+                            <div class="desc ">
                                 <h3> Great & Talented Team!</h3>
-                                <p class="lead">The master-builder of human happines no one rejects, dislikes avoids pleasure itself, because it is very pursue pleasure. </p>
-                                <i class="fa fa-quote-right"></i>
+                                <p class="lead ">The master-builder of human happines no one rejects, dislikes avoids pleasure itself, because it is very pursue pleasure. </p>
+                                <i class="fa fa-quote-right "></i>
                             </div>
-                            <div class="testi-meta">
-                                <img src="uploads/testi_03.png" alt="" class="img-fluid">
+                            <div class="testi-meta ">
+                                <img src="uploads/testi_03.png " alt=" " class="img-fluid ">
                                 <h4>Venanda Mercy </h4>
                             </div>
                             <!-- end testi-meta -->
@@ -546,144 +548,121 @@
     </div>
     <!-- end section -->
 
-    <div id="blog" class="section lb">
-        <div class="container">
-            <div class="section-title text-center">
+    <div id="experiences" class="section lb ">
+        <div class="container ">
+            <div class="section-title text-center ">
                 <h3>Experiences</h3>
-                <p>Here are some of my favorite websites that I've found myself spending hours at a time having fun with.</p>
+                <p>Here are some of the major experiences throughout my CS career/learning (idk which to write)</p>
             </div>
             <!-- end title -->
 
-            <div class="row">
-                <div class="col-md-4 col-sm-6 col-lg-4">
-                    <figure class="snip1401">
-                        <div class="services-inner-box">
+            <div class="row ">
+                <!-- first row -->
+                <div class="col-md-4 col-sm-6 col-lg-4 ">
+                    <figure class="snip1401 ">
+                        <div class="services-inner-box ">
                             <h2>Summer Research - Drexel</h2>
-                            <img src="images/ProjectIcons/drexel.jpg" alt="" />
+                            <img src="images/ProjectIcons/drexel.jpg " alt=" " />
                         </div>
 
-                        <figcaption style="width: 90%;">
-                            <div class="text-left" style="height:100%;padding-left:18%;overflow:auto;">
-                                <h3 style="color:#207cb6" class="text-center">Summer Research</h3>
-                                <p style="color:#207cb6;" class="text-center">6/13/2022 - 7/3/2022</p>
+                        <figcaption style="width: 90%; ">
+                            <div class="text-left " style="height:100%;padding-left:18%;overflow:auto; ">
+                                <h3 style="color:#207cb6 " class="text-center ">Summer Research</h3>
+                                <p style="color:#207cb6; " class="text-center ">2022</p>
 
                                 <p>Spent 3 weeks learning about and developing data science projects.</p>
                                 <p>Worked with college professors and undergraduate students to create a product.</p>
                                 <p>I spearheaded the idea of a fake news identifier trained on pre classified data.</p>
                                 <p>
-                                    <a style="color:#e79601ec" class="nav-link js-scroll-trigger active text-center" target="_blank" href="https://github.com/JJFrisch/Fake-News-Risk-Identification">GitHub link here</a>
+                                    <a style="color:#e79601ec " class="nav-link js-scroll-trigger active text-center " target="_blank " href="https://github.com/JJFrisch/Fake-News-Risk-Identification ">GitHub link here</a>
                                 </p>
                             </div>
                     </figure>
                 </div>
 
-                <div class="col-md-4 col-sm-6 col-lg-4">
-                    <figure class="snip1401">
-                        <div class="services-inner-box">
+                <div class="col-md-4 col-sm-6 col-lg-4 ">
+                    <figure class="snip1401 ">
+                        <div class="services-inner-box ">
                             <h2>Computational Linear Algebra</h2>
-                            <h4>Independent Study</h4>
-                            <img src="" alt="" />
+                            <!-- <h4>Independent Study</h4> -->
+                            <img src="images/ProjectIcons/linear-algebra=icon.png " alt=" " />
                         </div>
 
-                        <figcaption style="width: 90%;">
-                            <div class="text-left" style="height:100%;padding-left:18%;overflow:auto;">
-                                <h3 style="color:#207cb6" class="text-center">Summer Research</h3>
-                                <p style="color:#207cb6;" class="text-center">6/13/2022 - 7/3/2022</p>
+                        <figcaption style="width: 90%; ">
+                            <div class="text-left " style="height:100%;padding-left:18%;overflow:auto; ">
+                                <h3 style="color:#207cb6 " class="text-center ">Independent Study</h3>
+                                <p style="color:#207cb6; " class="text-center ">2022</p>
 
-                                <p>Spent 3 weeks learning about and developing data science projects.</p>
-                                <p>Worked with college professors and undergraduate students to create a product.</p>
-                                <p>I spearheaded the idea of a fake news identifier trained on pre classified data.</p>
-                                <p>
-                                    <a style="color:#e79601ec" class="nav-link js-scroll-trigger active text-center" target="_blank" href="https://github.com/JJFrisch/Fake-News-Risk-Identification">GitHub link here</a>
-                                </p>
+                                <p>Having outlearned the CS curiculum at my school I worked with one of my CS teachers to set up an independent study</p>
+                                <p>I spent 2 semesters working through a linear algebra college curiculum as an indevidual course with weekly meetings with my procter.</p>
+                                <p>Each unit along with taking a test I wrote a program to solve the types of matrix or calculations I learned in that unit.</p>
+                                <!-- <p>
+                                    <a style="color:#e79601ec " class="nav-link js-scroll-trigger active text-center " target="_blank " href="https://github.com/JJFrisch/Fake-News-Risk-Identification ">GitHub link here</a>
+                                </p> -->
                             </div>
                     </figure>
                 </div>
-                <div class="col-md-4 col-sm-6 col-lg-4">
-                    <figure class="snip1401">
-                        <div class="services-inner-box">
-                            <h2>Creative Website</h2>
-                            <h4>New prompts</h4>
-                            <img src="images/ProjectIcons/Hacker-Rank-logo.jpg" alt="" />
+                <div class="col-md-4 col-sm-6 col-lg-4 ">
+                    <figure class="snip1401 " style="height: 100%; ">
+                        <!-- style="height: 100%; "> -->
+                        <div class="services-inner-box " style="height: 100%; ">
+                            <h2 style="padding-top:10% ">HackerRank</h2>
+                            <!-- <h4>New prompts</h4> -->
+                            <img src=" images/ProjectIcons/Hackerrank-logo2.svg " style="width:80%;padding-top:15% " alt=" " />
                         </div>
 
-                        <figcaption style="width: 90%;">
-                            <div class="text-left" style="height:100%;padding-left:18%;overflow:auto;">
-                                <h3 style="color:#207cb6" class="text-center">Summer Research</h3>
-                                <p style="color:#207cb6;" class="text-center">6/13/2022 - 7/3/2022</p>
+                        <figcaption style="width: 90%; ">
+                            <div class="text-left " style="height:100%;padding-left:18%;overflow:auto; ">
+                                <h3 style="color:#207cb6 " class="text-center ">HackerRank</h3>
+                                <p style="color:#207cb6; " class="text-center ">2020-2022</p>
 
-                                <p>Spent 3 weeks learning about and developing data science projects.</p>
-                                <p>Worked with college professors and undergraduate students to create a product.</p>
-                                <p>I spearheaded the idea of a fake news identifier trained on pre classified data.</p>
+                                <p>HackerRank has been a great resource while learning coding or searching for new idea's to program.</p>
+                                <!-- <p>Worked with college professors and undergraduate students to create a product.</p> -->
+                                <!-- <p>I spearheaded the idea of a fake news identifier trained on pre classified data.</p> -->
                                 <p>
-                                    <a style="color:#e79601ec" class="nav-link js-scroll-trigger active text-center" target="_blank" href="https://github.com/JJFrisch/Fake-News-Risk-Identification">GitHub link here</a>
+                                    <a style="color:#e79601ec " class="nav-link js-scroll-trigger active text-center " target="_blank " href="https://www.hackerrank.com/ ">Visit HackerRank</a>
                                 </p>
                             </div>
                     </figure>
                 </div>
             </div>
+            <!-- second row of experiences -->
             <div class="row ">
                 <div class="col-md-4 col-sm-6 col-lg-4 ">
                     <figure class="snip1401 ">
-                        <img src="uploads/blog-01.jpg " alt=" " />
-                        <figcaption>
-                            <h3>HackerRank</h3>
-                            <p>One of the biggest helps to my start in CS</p>
-                            <ul>
-                                <li>by admin</li>
-                                <li>Apr 21, 2018</li>
-                                <li>Comments</li>
-                            </ul>
-                        </figcaption>
-                        <i class="ion-ios-home-outline "></i>
-                        <a href="# "></a>
+                        <div class="services-inner-box ">
+                            <h2>AP CS Classes</h2>
+                            <img src="images/ProjectIcons/CS-AP-test.PNG " alt=" " />
+                        </div>
+
+                        <figcaption style="width: 90%; ">
+                            <div class="text-left " style="height:100%;padding-left:18%;overflow:auto; ">
+                                <h3 style="color:#207cb6 " class="text-center ">AP Comp. Sci A and P</h3>
+                                <p style="color:#207cb6; " class="text-center ">2021 and 2022</p>
+
+                                <p>My HS offers two AP comuter science classes, CS A and CS Principles. Both are considered college level and full year courses.</p>
+                                <p>Taking these courses while interesting, wasn't challenging so I was recommended to work on an independant study. (Listed Above)</p>
+                                <p>During both these classes I have coded many smaller but interesting projects, see memory game or N queens slover in my portfolio.</p>
+                                <!-- <p>
+                                    <a style="color:#e79601ec " class="nav-link js-scroll-trigger active text-center " target="_blank " href="https://github.com/JJFrisch/Fake-News-Risk-Identification ">GitHub link here</a>
+                                </p> -->
+                            </div>
                     </figure>
                 </div>
-                <div class="col-md-4 col-sm-6 col-lg-4 ">
-                    <figure class="snip1401 hover ">
-                        <img src="uploads/blog-02.jpg " alt=" " />
-                        <figcaption>
-                            <h3>BSD</h3>
-                            <p>Etiam materials ut mollis tellus, vel posuere nulla. Etiam sit amet massa.</p>
-                            <ul>
-                                <li>by admin</li>
-                                <li>Apr 21, 2018</li>
-                                <li>Comments</li>
-                            </ul>
-                        </figcaption>
-                        <i class="ion-ios-home-outline "></i>
-                        <a href="# "></a>
-                    </figure>
-                </div>
-                <div class="col-md-4 col-sm-6 col-lg-4 ">
-                    <figure class="snip1401 ">
-                        <img src="uploads/blog-03.jpg " alt=" " />
-                        <figcaption>
-                            <h3>Open.AI</h3>
-                            <p>Etiam materials ut mollis tellus, vel posuere nulla. Etiam sit amet massa.</p>
-                            <ul>
-                                <li>by admin</li>
-                                <li>Apr 21, 2018</li>
-                                <li>Comments</li>
-                            </ul>
-                        </figcaption>
-                        <i class="ion-ios-home-outline "></i>
-                        <a href="# "></a>
-                    </figure>
-                </div>
+
             </div>
 
         </div>
     </div> -->
 
-    <div id="contact " class="section db ">
+    <div id="contact" class="section db ">
         <div class="container ">
             <div class="section-title text-center ">
                 <h3>Contact Me</h3>
                 <p>Email me at
-                    <a style="color:#e79601ec">jjfrisch</a> @ <a style="color:#e79601ec">outlook</a> .com or use the form below</p>
+                    <a style="color:#e79601ec ">jjfrisch</a> @ <a style="color:#e79601ec ">outlook</a> .com or use the form below</p>
                 <p>Follow me on
-                    <a style="color:#e79601ec" href="https://github.com/JJFrisch">GitHub</a> here</p>
+                    <a style="color:#e79601ec " href="https://github.com/JJFrisch ">GitHub</a> here</p>
             </div>
             <!-- end title -->
 
