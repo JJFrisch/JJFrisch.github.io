@@ -281,9 +281,9 @@
     </div>
     <!-- end section -->
 
-    <!-- <div>
+    <div>
         <div style="width:100%;height:0.5em;background-color:#faad3b"></div>
-    </div> -->
+    </div>
 
     <div id="portfolio" class="section lb">
         <div class="container" id="portfolio-holder" style="max-height: 80em;overflow:hidden;transition: height 0.4s linear;">
@@ -434,10 +434,10 @@
 
             </div>
         </div>
-        <!-- <button src="images/arrow.png" onclick="openPortfolio()" class=" btn-new from-middle animated " style="padding-top:1%;width:100%;background-color: transparent;background-repeat: no-repeat;outline:none;border: none;">
+        <button src="images/arrow.png" onclick="openPortfolio()" class=" btn-new from-middle animated " style="padding-top:1%;width:100%;background-color: transparent;background-repeat: no-repeat;outline:none;border: none;">
         <img id="portfolio-open-image" src="images/arrow.png " alt=" ">
-            <h4 style="color:#033e48bd">Expand Portfolio</h4>
-        </button> -->
+            <h4 id="portfolio-open-text"style="color:#033e48bd">Expand Portfolio</h4>
+        </button>
 
     </div>
 
@@ -657,13 +657,13 @@
 
     <div id="contact" class="section db ">
         <div class="container ">
-            <div class="section-title text-center ">
+            <!-- <div class="section-title text-center ">
                 <h3>Contact Me</h3>
                 <p>Email me at
                     <a style="color:#e79601ec ">jjfrisch</a> @ <a style="color:#e79601ec ">outlook</a> .com or use the form below</p>
                 <p>Follow me on
                     <a style="color:#e79601ec " href="https://github.com/JJFrisch ">GitHub</a> here</p>
-            </div>
+            </div> -->
             <!-- end title -->
 
             <div class="row ">
@@ -671,7 +671,18 @@
                     <div class="contact_form ">
                         <div id="message "></div>
                         <form id="contactForm " name="sentMessage " novalidate="novalidate ">
-                            <div class="row ">
+                            <!-- take out ofform if i ever reinstate the fillout form below -->
+                            <div class="section-title text-center ">
+                                <h3>Contact Me</h3>
+                                <p>Email me at
+                                    <a style="color:#e79601ec ">jjfrisch</a> @ <a style="color:#e79601ec ">outlook</a> .com or use the form below</p>
+                                <p>Follow me on
+                                    <a style="color:#e79601ec " href="https://github.com/JJFrisch ">GitHub</a> here</p>
+                            </div>
+
+                            <!-- this is a more complete contact me form to be filled out and sent to my email -->
+
+                            <!-- <div class="row ">
                                 <div class="col-md-6 ">
                                     <div class="form-group ">
                                         <input class="form-control " id="name " type="text " placeholder="Your Name " required="required " data-validation-required-message="Please enter your name. ">
@@ -698,44 +709,44 @@
                                     <button id="sendMessageButton " class=" sim-btn btn-new from-middle animated " data-text="Send Message " type="submit ">Send Message</button>
                                 </div>
 
-                                <!-- trying a idfferent meothod -->
-                                <script src="https://smtpjs.com/v3/smtp.js ">
-                                </script>
-                                <script type="text/javascript ">
-                                    function sendEmail() {
-                                        Email.send({
-                                                Host: "smtp.live.com ",
-                                                Username: "jjfrisch@outlook.com ",
-                                                Password: "Enter your password ",
-                                                To: 'jjfrisch@outlook.com ',
-                                                From: "jjfrisch@outlook.com ",
-                                                Subject: "Sending Email using javascript ",
-                                                Body: "Well that was easy!! ",
-                                            })
-                                            .then(function(message) {
-                                                alert("mail sent successfully ")
-                                            });
-                                    }
-                                </script>
-                                </head>
+                                trying a idfferent meothod
+                            <script src="https://smtpjs.com/v3/smtp.js ">
+                            </script>
+                            <script type="text/javascript ">
+                                function sendEmail() {
+                                    Email.send({
+                                            Host: "smtp.live.com ",
+                                            Username: "jjfrisch@outlook.com ",
+                                            Password: "Enter your password ",
+                                            To: 'jjfrisch@outlook.com ',
+                                            From: "jjfrisch@outlook.com ",
+                                            Subject: "Sending Email using javascript ",
+                                            Body: "Well that was easy!! ",
+                                        })
+                                        .then(function(message) {
+                                            alert("mail sent successfully ")
+                                        });
+                                }
+                            </script>
+                            </head>
 
-                                <form method="post ">
-                                    <input type="button " value="Send Email " onclick="sendEmail() " />
-                                </form>
-                                <!-- till here -->
-
-
+                            <form method="post ">
+                                <input type="button " value="Send Email " onclick="sendEmail() " />
+                            </form>
+                            <!-- till here -->
 
 
-                            </div>
-                        </form>
-                    </div>
+
+
+                    </div> -->
+                    </form>
                 </div>
-                <!-- end col -->
             </div>
-            <!-- end row -->
+            <!-- end col -->
         </div>
-        <!-- end container -->
+        <!-- end row -->
+    </div>
+    <!-- end container -->
     </div>
     <!-- end section -->
 

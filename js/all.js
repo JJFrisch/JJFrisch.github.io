@@ -4599,10 +4599,12 @@ function openPortfolio() {
     if (document.getElementById("portfolio-holder").style.maxHeight != "none") {
         document.getElementById("portfolio-holder").style.maxHeight = "none";
         document.getElementById("portfolio-open-image").src = "images/arrow1.png";
+        document.getElementById("portfolio-open-text").innerHTML = "Close Portfolio";
         portfolio_opened = true
     } else {
         document.getElementById("portfolio-holder").style.maxHeight = "80em";
         portfolio_opened = false
         document.getElementById("portfolio-open-image").src = "images/arrow.png";
+        document.getElementById("portfolio-open-text").innerHTML = "Expand Portfolio";
     }
 }
