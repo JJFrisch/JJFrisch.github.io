@@ -317,7 +317,7 @@
                             <!-- <h3>ML Model</h3> -->
                             <h4>To GitHub page</h4>
                         </div>
-                        <div class="img-overlay">
+                        <div type="button" class="img-overlay btn btn-info btn-lg" data-toggle="modal" data-target="#myModal1">
                             <a class="fix hoverbutton global-radius"></a>
                             <a href="https://github.com/JJFrisch/Fake-News-Risk-Identification" target="_blank" class="hoverbutton global-radius"><i class="fa fa-picture-o"></i></a>
                         </div>
@@ -335,7 +335,7 @@
                             <h3>Only part has ML</h3>
                             <h4>To GitHub page</h4>
                         </div>
-                        <div class="img-overlay">
+                        <div type="button" class="img-overlay btn btn-info btn-lg" data-toggle="modal" data-target="#myModal3">
                             <a class="fix hoverbutton global-radius"></a>
                             <a href="https://github.com/JJFrisch/Maze-Theories" target="_blank" class="hoverbutton global-radius"><i class="fa fa-picture-o"></i></a>
                         </div>
@@ -353,7 +353,7 @@
                             <!-- <h3>ML Model</h3> -->
                             <h4>To GitHub page</h4>
                         </div>
-                        <div class="img-overlay">
+                        <div type="button" class="img-overlay btn btn-info btn-lg" data-toggle="modal" data-target="#myModal3">
                             <a class="fix hoverbutton global-radius"></a>
                             <a href="https://github.com/JJFrisch/Flying-Glob-Game" target="_blank" class="hoverbutton global-radius"><i class="fa fa-picture-o"></i></a>
                         </div>
@@ -432,16 +432,83 @@
                     </div>
                 </div>
 
+                <!-- Modal 1 -->
+                <div class="modal fade" id="myModal1" role="dialog">
+                    <div class="modal-dialog modal-lg" style="margin: 8rem;
+                    max-width: 100vw;">
+
+                        <!-- Modal content-->
+                        <div class="modal-content " style="width:100% ">
+                            <div class="modal-header text-center ">
+                                <h2 class="text-center " style="width:100% ">Fake News Risk Identification</h2>
+                                <button type="button " class="close" data-dismiss="modal">&times;</button>
+                            </div>
+                            <div class="modal-body ">
+                                <div>
+                                    <img src="images\ProjectIcons/Fake-News/Confusion Matrix.png " class="img-fluid " alt="Image ">
+                                    <h4 style="text-align:right;">About CF matrix</h4>
+                                </div>
+                                <img src="images\ProjectIcons/Fake-News/ML-stats.png " class="img-fluid " alt="Image ">
+                                <p style="padding: 20%; ">Some text in the modal 1.</p>
+                                <a style="color:#237dc3ec " target="_blank " href="https://github.com/JJFrisch/Fake-News-Risk-Identification ">Fake News</a>
+                            </div>
+                            <div class="modal-footer ">
+                                <a class="btn-new from-middle animated" data-dismiss="modal" style="color:white; ">Close</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Modal 2 -->
+                <div class="modal fade " id="myModal2 " role="dialog ">
+                    <div class="modal-dialog ">
+
+                        <!-- Modal content-->
+                        <div class="modal-content ">
+                            <div class="modal-header ">
+                                <button type="button " class="close " data-dismiss="modal ">&times;</button>
+                                <h4 class="modal-title ">Modal Header 2</h4>
+                            </div>
+                            <div class="modal-body ">
+                                <p>Some text in the modal 2.</p>
+                            </div>
+                            <div class="modal-footer ">
+                                <button type="button " class="btn btn-default " data-dismiss="modal ">Close modal 2</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Modal 3 -->
+                <div class="modal fade " id="myModal3 " role="dialog ">
+                    <div class="modal-dialog ">
+
+                        <!-- Modal content-->
+                        <div class="modal-content ">
+                            <div class="modal-header ">
+                                <button type="button " class="close " data-dismiss="modal ">&times;</button>
+                                <h4 class="modal-title ">Modal Header 3</h4>
+                            </div>
+                            <div class="modal-body ">
+                                <p>Some text in the modal 3.</p>
+                            </div>
+                            <div class="modal-footer ">
+                                <button type="btn-new from-middle animated " class="btn btn-default " data-dismiss="modal ">Close modal 3</button>
+                                <a class="btn-new from-middle animated " href="https://github.com/JJFrisch " target="_blank ">My GitHub Page</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-        <button src="images/arrow.png" onclick="openPortfolio()" class=" btn-new from-middle animated " style="padding-top:1%;width:100%;background-color: transparent;background-repeat: no-repeat;outline:none;border: none;">
-        <img id="portfolio-open-image" src="images/arrow.png " alt=" ">
-            <h4 id="portfolio-open-text"style="color:#033e48bd">Expand Portfolio</h4>
+        <button src="images/arrow.png " onclick="openPortfolio() " class=" btn-new from-middle animated " style="padding-top:1%;width:100%;background-color: transparent;background-repeat: no-repeat;outline:none;border: none; ">
+        <img id="portfolio-open-image " src="images/arrow.png " alt=" ">
+            <h4 id="portfolio-open-text "style="color:#033e48bd ">Expand Portfolio</h4>
         </button>
 
     </div>
 
-    <div id="testimonials" class="section wb">
+    <div id="testimonials " class="section wb ">
         <div class="container ">
             <div class="section-title text-center ">
                 <h3>Testimonials</h3>
@@ -548,7 +615,7 @@
     </div>
     <!-- end section -->
 
-    <div id="experiences" class="section lb ">
+    <div id="experiences " class="section lb ">
         <div class="container ">
             <div class="section-title text-center ">
                 <h3>Experiences</h3>
@@ -655,7 +722,7 @@
         </div>
     </div> -->
 
-    <div id="contact" class="section db ">
+    <div id="contact " class="section db ">
         <div class="container ">
             <!-- <div class="section-title text-center ">
                 <h3>Contact Me</h3>
