@@ -1,17 +1,17 @@
-function sendEmail() {
-    Email.send({
-            Host: "smtp.live.com",
-            Username: "jjfrisch@outlook.com",
-            Password: "Enter your password",
-            To: 'jjfrisch@outlook.com',
-            From: "jjfrisch@outlook.com",
-            Subject: "Sending Email using javascript",
-            Body: "Well that was easy!!",
-        })
-        .then(function(message) {
-            alert("mail sent successfully")
-        });
-}
+// function sendEmail() {
+//     Email.send({
+//             Host: "smtp.live.com",
+//             Username: "jjfrisch@outlook.com",
+//             Password: "Enter your password",
+//             To: 'jjfrisch@outlook.com',
+//             From: "jjfrisch@outlook.com",
+//             Subject: "Sending Email using javascript",
+//             Body: "Well that was easy!!",
+//         })
+//         .then(function(message) {
+//             alert("mail sent successfully")
+//         });
+// }
 $(function() {
 
     $("#contactForm input,#contactForm textarea").jqBootstrapValidation({
@@ -35,7 +35,7 @@ $(function() {
             $this = $("#sendMessageButton");
             $this.prop("disabled", true); // Disable submit button until AJAX call is complete to prevent duplicate messages
             $.ajax({
-                url: "././mail/contact_me.php",
+                url: "mail/contact_me.php",
                 type: "POST",
                 data: {
                     name: name,
