@@ -331,7 +331,7 @@
                         <div class="text-hover">
                             <h4>Click to see more info</h4>
                         </div>
-                            <div type="button" class="img-overlay btn btn-info btn-lg" data-toggle="modal" data-target="#fake-news-modal" style="color:white">
+                            <div type="button" class="img-overlay btn btn-info btn-lg" data-toggle="modal" data-target="#maze-theories-modal" style="color:white">
                         </div>
                     </div>
                 </div>
@@ -439,7 +439,7 @@
                                 <h1 class="text-center" style="width:100%;position:absolute;font-size:2em;"><strong>News Risk Identification</strong></h1>
                                 <button type="button" style="width:10%" class="close" data-dismiss="modal">&times;</button>
                             </div>
-                            <div class="modal-body ">
+                            <div class="modal-body text-center section-title">
                                 <div>
                                     <img src="images\ProjectIcons/Fake-News/Confusion Matrix.png" class="" alt="Image " style="border-radius: 8px;
                                     width: 40%;
@@ -451,9 +451,8 @@
                                     border-radius: 4px;
                                     ">
                                 </div>
-                                <div class="text-center section-title" style="padding:5%;padding-bottom:0%;">
-                                    <p></p>
-                                    <p style="">I stared this project during my summer program at Drexel, along with two undergraduate students, as our final product. It's original goal was to help people from blindly trusting information found on websites that may be misleading or give false claims by providing a risk assessment provided by a machine learning NLP model.</p>
+                                <div class="" style="padding:5%;padding-bottom:0%;">
+                                    <p>I stared this project during my summer program at Drexel, along with two undergraduate students, as our final product. It's original goal was to help people from blindly trusting information found on websites that may be misleading or give false claims by providing a risk assessment provided by a machine learning NLP model.</p>
                                     <p>To make this broad statement more targetable for a small group the goal was narrowed to train a model to scan a website’s text and predict (0-1) if the website contains fake news, misinformation, or disinformation. Using two databases from kaggle, one with 46,000 True and 44,000 Fake news articles. The other database had 6,256 classified as either true or fake.</p>
                                     <p></p>
                                     <!-- <a style="color:#237dc3ec " target="_blank " href="https://github.com/JJFrisch/Fake-News-Risk-Identification ">Fake News</a> -->
@@ -466,16 +465,15 @@
                                     float: right;
                                     vertical-align: top;
                                     padding:1%">
-                                    <div class="section-title text-center" style="padding: 3%;">
+                                    <div class="" style="padding: 3%;">
                                         <p>The data was then imported and organized. Only important data columns were kept, and any article with less than 20 words was removed. This was because articles with less than 20 words don't have enough substance to be correctly judged. The data was split into a train group and test group. The size or both can be seen in the screenshot to the right.</p>
-
+                                        <p>After training and fitting the modal it had an accuracy of 98.8% on the test data. Such a high accuracy on this problem may signal overfitting which can be common with this kind of classifier.</p>
                                     </div>
                                 </div>
-                                <div class="text-center" style="padding:1%">
-                                    <h4>After training and fitting the modal it had an accuracy of 98.8% on the test data. Such a high accuracy on this problem may signal overfitting which can be common with this kind of classifier.</h4>
-                                    <h4>To get a better assessment of how the modal would preform on current actircles that the users may encounter a first round tex=st was preformed. 5 articles were gathered from the New York Times website and 5 articles were chosen from NYT's database of removed fake news articles. Our model correctly identified all 5 current acticles and 4 of the fake news actirles only classifieng one as a true article.</h4>
-                                    <h4>With such a small sample size it is hard to tell excactly how well the model would preform. This project is far from complete, missing a scraper to feed the modal text from websites and missing any real user interface. Undoubtably this modal also has flaws and bais that have been unexplored.</h4>
-                                    <h4>To see the code behind this project visit my GitHub page located <a style="color:#237dc3ec " target="_blank " href="https://github.com/JJFrisch/Fake-News-Risk-Identification ">here</a>.</h4>
+                                <div class="" style="padding-top:2%">
+                                    <p>To get a better assessment of how the modal would preform on current actircles that the users may encounter a first round tex=st was preformed. 5 articles were gathered from the New York Times website and 5 articles were chosen from NYT's database of removed fake news articles. Our model correctly identified all 5 current acticles and 4 of the fake news actirles only classifieng one as a true article.</p>
+                                    <p>With such a small sample size it is hard to tell excactly how well the model would preform. This project is far from complete, missing a scraper to feed the modal text from websites and missing any real user interface. Undoubtably this modal also has flaws and bais that have been unexplored.</p>
+                                    <h4 style="padding-top: 2em;">View the project here: <a style="color:#237dc3ec " target="_blank " href="https://github.com/JJFrisch/Fake-News-Risk-Identification">https://github.com/JJFrisch/Fake-News-Risk-Identification</a>.</h4>
                                 </div>
                             </div>
                             <div class="modal-footer ">
